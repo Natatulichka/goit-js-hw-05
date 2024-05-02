@@ -1,5 +1,9 @@
 // Імена користувачів
-// Напиши стрілочну функцію getUserNames(users), яка прийматиме один параметр users — масив об’єктів користувачів. Функція має повертати масив імен усіх користувачів (властивість name) із масиву users.На що буде звертати увагу ментор при перевірці:Оголошена змінна getUserNames;Змінній getUserNames присвоєна стрілочна функція з параметром (users).Для перебирання параметра users використовується метод map()
+
+const getUserNames = (users) => {
+  const names = users.map((user) => user.name);
+  return names;
+};
 
 console.log(
   getUserNames([
